@@ -8,13 +8,14 @@ import static org.junit.Assert.*;
 public class CarOwnerTest {
 
     public static final String JOHN_DOE = "John Doe";
+    public static final String BEETLE = "Beetle";
     private Car car;
     private CarOwner carOwner;
 
     @Before
     public void initTest(){
 
-        car = new Car("Beetle");
+        car = new Car(BEETLE);
         carOwner = new CarOwner(JOHN_DOE, car);
     }
 
