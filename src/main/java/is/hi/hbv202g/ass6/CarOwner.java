@@ -3,7 +3,7 @@ package is.hi.hbv202g.ass6;
 public class CarOwner {
     private String theName;
 
-    Car theOwnedCar;
+    private Car theOwnedCar;
 
 
     CarOwner(String name, Car ownedCar) {
@@ -13,6 +13,10 @@ public class CarOwner {
 
     String getName() {
         return theName;
+    }
+
+    String getCarName(){
+        return theOwnedCar.getName();
     }
 
 }
